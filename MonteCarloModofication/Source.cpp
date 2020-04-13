@@ -17,6 +17,7 @@ void f(size_t N, double& result) {
 	std::uniform_int_distribution<int> d(0, 100);
 	for (int i = 0; i < N; i++) {
 		auto x = d(e);
+
 		auto y = d(e);
 		if ((x - 50) * (x - 50) + (y - 50) * (y - 50) <= 2500) {
 			++result;
